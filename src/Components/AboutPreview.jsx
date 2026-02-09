@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import aboutImage from "../assets/about.jpg";
 const AboutPreview = () => {
   return (
     <section id="about" className="py-32">
@@ -25,18 +26,18 @@ const AboutPreview = () => {
             to the community. We believe that great architecture emerges from
             understanding context and purpose.
           </p>
-          <button className="group mt-6 border-2 border-neutral-900 px-8 py-3 rounded-full text-sm font-medium hover:bg-neutral-900 hover:text-white transition-all">
+          <Link to={'/about'} className="group mt-6 border-2 border-neutral-900 px-8 py-3 rounded-full text-sm font-medium hover:bg-neutral-900 hover:text-white transition-all">
             Learn More About Us
             <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">
               →
             </span>
-          </button>
+          </Link>
         </div>
 
         <div className="relative">
           <div className="aspect-[4/5] bg-neutral-200 rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/api/placeholder/800/1000"
+              src={aboutImage}
               alt="Architecture Studio"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />

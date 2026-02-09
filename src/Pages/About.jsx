@@ -1,5 +1,5 @@
 import React from "react";
-
+import abooutImage from "../assets/about.jpg";
 const About = () => {
   return (
     <section className="bg-white">
@@ -35,7 +35,11 @@ const About = () => {
 
         {/* Image Placeholder */}
         <div className="h-96 bg-neutral-200 rounded-lg flex items-center justify-center text-neutral-500 text-sm">
-          Studio / Project Image
+          <img
+            src={abooutImage}
+            alt="About Studio"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
 

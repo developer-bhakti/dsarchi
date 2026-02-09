@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { projectsData } from '../data/projectsData'
 
 const FeaturedProjects = () => {
   return (
@@ -18,18 +20,14 @@ const FeaturedProjects = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
-              { title: "Riverfront Residence", location: "Pune, India", category: "Residential" },
-              { title: "Tech Campus Hub", location: "Bangalore, India", category: "Commercial" },
-              { title: "Heritage Restoration", location: "Mumbai, India", category: "Cultural" },
-            ].map((project, item) => (
+            {projectsData.slice(0, 3).map((project, item) => (
               <div
                 key={item}
                 className="group cursor-pointer"
               >
                 <div className="relative h-80 bg-neutral-200 rounded-2xl overflow-hidden shadow-lg">
                   <img 
-                    src={`/api/placeholder/600/800`} 
+                    src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -53,10 +51,10 @@ const FeaturedProjects = () => {
           </div>
 
           <div className="text-center mt-16">
-            <button className="group border-2 border-neutral-900 px-10 py-4 rounded-full text-sm font-medium hover:bg-neutral-900 hover:text-white transition-all">
+            <Link to={'/projects'} className="group border-2 border-neutral-900 px-10 py-4 rounded-full text-sm font-medium hover:bg-neutral-900 hover:text-white transition-all">
               View All Projects
               <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-            </button>
+            </Link>
           </div>
         </div>
       </section>

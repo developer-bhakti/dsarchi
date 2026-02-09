@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -29,13 +30,13 @@ const Hero = () => {
                 and human experience that transforms the way you live.
               </p>
               <div className="flex flex-wrap gap-4 pt-6">
-                <button className="group bg-white text-neutral-900 px-10 py-4 rounded-full text-sm font-medium hover:bg-neutral-100 transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                <Link to={'/projects'} className="group bg-white text-neutral-900 px-10 py-4 rounded-full text-sm font-medium hover:bg-neutral-100 transition-all shadow-lg hover:shadow-xl hover:scale-105">
                   View Projects
                   <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                </button>
-                <button className="border-2 border-white px-10 py-4 rounded-full text-sm font-medium hover:bg-white hover:text-neutral-900 transition-all">
+                </Link>
+                <Link to={'/contact'} className="border-2 border-white px-10 py-4 rounded-full text-sm font-medium hover:bg-white hover:text-neutral-900 transition-all">
                   Contact Us
-                </button>
+                </Link>
               </div>
             </div>
           </div>
