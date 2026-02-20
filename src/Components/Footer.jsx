@@ -30,18 +30,24 @@ export default function Footer() {
           <div>
             <h4 className="font-medium mb-4">Connect</h4>
             <div className="space-y-2 text-sm text-neutral-400">
-              <div className="hover:text-white transition cursor-pointer">
-                Instagram
-              </div>
-              <div className="hover:text-white transition cursor-pointer">
-                LinkedIn
-              </div>
-              <div className="hover:text-white transition cursor-pointer">
-                Behance
-              </div>
-              <div className="hover:text-white transition cursor-pointer">
-                Pinterest
-              </div>
+              <a
+                  href="https://www.instagram.com/dsarchitects97?igsh=MWdsaTB2Y3V2ZWd5NA=="
+                  className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition"
+                >
+                  <span className="text-white text-sm">Instagram</span>
+                </a>
+               <a
+                  href="https://www.linkedin.com/in/ar-deep-suthar-b09a12146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition"
+                >
+                  <span className="text-white text-sm">LinkdIn</span>
+                </a>
+                 <a
+                  href="https://www.facebook.com/share/16A8QLCnH8/"
+                  className="w-10 h-10 bg-neutral-900 rounded-lg flex items-center justify-center hover:bg-neutral-700 transition"
+                >
+                  <span className="text-white text-sm">Facebook</span>
+                </a>
             </div>
           </div>
         </div>
