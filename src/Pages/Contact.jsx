@@ -197,7 +197,7 @@ const Contact = () => {
             {[
               { num: "50+", label: "Projects Completed" },
               { num: "98%", label: "Client Satisfaction" },
-              { num: "7+", label: "Years Experience" },
+              { num: "9+", label: "Years Experience" },
               { num: "24h", label: "Response Time" },
             ].map((item, index) => (
               <div key={index}>

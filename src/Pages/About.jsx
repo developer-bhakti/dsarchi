@@ -107,7 +107,7 @@ const About = () => {
 
           <div>
             <h3 className="text-3xl sm:text-4xl font-light text-neutral-900">
-              7+
+              9+
             </h3>
             <p className="mt-2 text-xs sm:text-sm text-neutral-600">
               Years of Experience

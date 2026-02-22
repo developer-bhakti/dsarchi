@@ -25,9 +25,9 @@ export default function Navbar() {
           <Link to="/about" className="hover:text-neutral-600 transition">
             About
           </Link>
-          <Link to="/services" className="hover:text-neutral-600 transition">
+          {/* <Link to="/services" className="hover:text-neutral-600 transition">
             Services
-          </Link>
+          </Link> */}
           <Link to="/contact" className="hover:text-neutral-600 transition">
             Contact
           </Link>

@@ -6,9 +6,9 @@ const StatsBar = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { number: "200+", label: "Projects Completed" },
-              { number: "15", label: "Years Experience" },
-              { number: "50+", label: "Awards Won" },
+              { number: "50+", label: "Projects Completed" },
+              { number: "9+", label: "Years Experience" },
+              { number: "10+", label: "Awards Won" },
               { number: "98%", label: "Client Satisfaction" },
             ].map((stat, idx) => (
               <div key={idx} className="space-y-2">
